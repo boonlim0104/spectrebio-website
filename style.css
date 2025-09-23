@@ -419,11 +419,33 @@ nav {
 
 /* --- Footer --- */
 footer {
-    background: #000;
-    color: var(--light-text-secondary);
+    background: var(--dark-bg);
+    color: var(--light-text);
     text-align: center;
-    padding: 30px 0;
-    border-top: 1px solid #2a2a2a;
+    padding: 40px 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer p {
+    margin: 0;
+    opacity: 0.7;
+}
+
+.gep-statement {
+    font-size: 0.8rem;
+    margin-top: 8px;
+    opacity: 0.6;
+}
+
+.gep-statement a {
+    color: var(--light-text);
+    text-decoration: underline;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.gep-statement a:hover {
+    color: var(--accent-blue);
+    text-shadow: 0 0 5px var(--accent-blue);
 }
 
 /* --- Responsive Design --- */
